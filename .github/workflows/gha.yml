@@ -19,7 +19,7 @@ jobs:
     - name: Install dependencies
       run: |
         echo "--insecure" >  ~/.curlrc
-        pushd Example
+        cd Example
         pod install
         popd  
     - name: Build and test
