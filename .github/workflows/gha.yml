@@ -20,6 +20,7 @@ jobs:
       run: |
         echo "--insecure" >  ~/.curlrc
         cd Example
+        pod update
         pod install
         popd  
     - name: Build and test
